@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mudar Cor ao Selecionar</title>
+<style>
+    .elemento {
+        width: 100px;
+        height: 100px;
+        transition: background-color 0.3s ease; 
+    }
+</style>
+</head>
+<body>
+
+<div class="elemento" onclick="mudarCor(this)"></div>
+
+<script>
+    function mudarCor(elemento) {
+        var novaCor = "#FF5733"; 
+        elemento.style.backgroundColor = novaCor;
+        elemento.dataset.corSelecionada = novaCor; 
+    }
+</script>
+
+</body>
+</html>
